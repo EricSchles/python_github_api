@@ -22,7 +22,7 @@ First you'll need to [generate your authentication token](https://help.github.co
 
 Remember to give it all the access you want to be able to use from this api.  If you don't click a checkbox when you are generating the token and then want to use that endpoint, you'll need to create a new token with that access right.
 
-Please save your authnetication token in a file called oauthkey.pickle - the ability to save to whatever file you want will be available in future releases of the tool.
+Please save your authnetication token in a file called `oauthkey.pickle` - the ability to save to whatever file you want will be available in future releases of the tool.
 
 #How to use
 
