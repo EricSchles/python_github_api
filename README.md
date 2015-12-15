@@ -39,10 +39,24 @@ response = make_request(
         parameters = {
             "per_page":"200"
         })
-    )
+    
 ```
 
 Note the parameters dictionary takes in any parameters you want.  At this time I don't check to see if the parameter will actually work for the given endpoint so you'll need to make sure you are passing the appropriate parameters yourself.
+
+Note that make_request will generate a persistent json file with the name of `output_file`.  If you'd like this to not happen, you can turn persistance off with the following call, instead:
+
+```
+from client import make_request
+response = make_request(
+        endpoint="https://api.github.com/orgs/hackingagainstslavery/members",
+        output_file="members.json",
+        parameters = {
+            "per_page":"200"
+        }
+        persistent=False)
+    
+```
 
 
     
